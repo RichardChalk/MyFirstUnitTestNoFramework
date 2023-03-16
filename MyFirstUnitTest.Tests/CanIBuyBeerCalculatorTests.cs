@@ -94,5 +94,34 @@ namespace MyFirstUnitTest.Tests
                 Console.WriteLine(e);
             }
         }
+
+        // Test 4 ////////////////////////////////////////////////////////////////////////////
+        public static void If_User_Is_Old_Enough_Not_Drunk_Pass()
+        {
+            try
+            {
+                // Arrange 
+                var age = 21;
+                var place = "Systemet";
+                var proMille = 1.4m;
+
+                // Act
+                var result = CanIBuyBeerCalculator.CalculateBeerBuy(age, place, proMille);
+
+                // Assert
+                if (result == CanIBuyBeerCalculator.BuyBeerResultEnum.Ok)
+                {
+                    Console.WriteLine("PASSED: Person can buy beer anywhere!");
+                }
+                else
+                {
+                    Console.WriteLine("FAILED: Person cannot buy beer anywhere!");
+                }
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine(e);
+            }
+        }
     }
 }

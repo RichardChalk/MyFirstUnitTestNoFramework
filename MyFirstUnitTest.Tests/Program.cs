@@ -11,3 +11,6 @@ CanIBuyBeerCalculatorTests.If_User_Is_Under20_And_Systemet_Fail();
 // test 3
 CanIBuyBeerCalculatorTests.If_User_Is_Too_Drunk_Fail();
 
+// test 4
+CanIBuyBeerCalculatorTests.If_User_Is_Old_Enough_Not_Drunk_Pass();
+
